@@ -1,0 +1,13 @@
+{
+  "name": "myl",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c cyan,magenta \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start:api": "npm --prefix backend start",
+    "build:web": "npm --prefix frontend run build",
+    "preview:web": "npm --prefix frontend run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

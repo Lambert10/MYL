@@ -1,7 +1,105 @@
-:root{ --bg:#0b0c10; --text:#e5e7eb; --muted:#9ca3af; --card:#111827; --accent:#14b8a6; }
-*{ box-sizing:border-box; }
-html,body,#root{ height:100%; }
-body{ margin:0; background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-main{ min-height:100%; }
-button{ cursor:pointer; }
-input{ background:#0f172a; color:var(--text); border:1px solid #1f2937; border-radius:10px; padding:.6rem .8rem; }
+:root {
+  --bg: #0b1220;
+  --panel: #0f172a;
+  --border: #1f2937;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; }
+
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 18, 32, 0.9);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+}
+
+.brand {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.badge {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.9);
+  font-weight: 800;
+}
+
+.brandText { display: flex; flex-direction: column; line-height: 1.1; }
+.brandText span { color: var(--muted); font-size: 0.85rem; }
+
+.nav {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.nav a.active {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.linkBtn {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+}
+.linkBtn:hover { color: var(--text); }
+
+.userTag {
+  color: var(--muted);
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+  flex: 1;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem;
+  color: var(--muted);
+  text-align: center;
+}

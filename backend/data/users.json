@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "email": "admin@myl.local",
+    "name": "Admin",
+    "role": "admin",
+    "passwordHash": "$2b$10$UQHAfS5mnvL6ctJx/8HKzOEhGo3vyheTRvTgLyBER6i3Brbewmvvy",
+    "createdAt": "2026-02-05T03:33:37.748Z"
+  }
+]

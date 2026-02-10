@@ -1,0 +1,16 @@
+{
+  "0": {
+    "name": "Dragon de Magma",
+    "type": "Aliado",
+    "rarity": "Legendaria",
+    "edition": "",
+    "race": "Dragón",
+    "cost": 4,
+    "strength": 3,
+    "ability": "Cuando Dragón de Magma entra en juego, destruye un Aliado oponente.",
+    "description": "",
+    "image_url": "https://api.myl.cl/static/cards/93/006.png",
+    "id": 0,
+    "updatedAt": "2026-02-05T20:55:02.399Z"
+  }
+}
